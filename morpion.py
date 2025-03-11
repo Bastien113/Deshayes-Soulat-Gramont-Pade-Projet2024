@@ -142,7 +142,7 @@ def jeu():
                         pygame.time.wait(2000)
                         reinitialiser_jeu()
                         menu()
-                        ecran.fill(BLANC)
+                        ecran.fill(white)
                         dessiner_lignes()
                     elif plateau_plein():
                         print("Match nul !")
@@ -150,7 +150,7 @@ def jeu():
                         pygame.time.wait(2000)
                         reinitialiser_jeu()
                         menu()
-                        ecran.fill(BLANC)
+                        ecran.fill(white)
                         dessiner_lignes()
                     else:
                         joueur_actuel = "O" if joueur_actuel == "X" else "X"
