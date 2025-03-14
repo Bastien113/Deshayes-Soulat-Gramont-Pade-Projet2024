@@ -32,14 +32,14 @@ def dessiner_O(ligne, col):
 
 def dessiner_XO(plateau):
     """Dessine les symboles X et O sur la grille en fonction de l'état du plateau."""
-    ecran.fill(WHITE)  # Ajoutez cette ligne pour effacer l'écran avant de redessiner
+    ecran.fill(WHITE)
     for ligne in range(3):
         for col in range(3):
             if plateau[ligne][col] == "X":
                 dessiner_X(ligne, col)
             elif plateau[ligne][col] == "O":
                 dessiner_O(ligne, col)
-    dessiner_lignes()  # Redessinez les lignes de la grille
+    dessiner_lignes()
 
 def afficher_message(message):
     """Affiche un message au centre de l'écran."""
